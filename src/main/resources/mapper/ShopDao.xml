@@ -3,9 +3,9 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
-    <mapper namespace="com.imooc.o2o.dao.ShopDao">
+    <mapper namespace="com.wjl.o2o.dao.ShopDao">
     
-    <resultMap type="com.imooc.o2o.entity.Shop" id="shopMap">
+    <resultMap type="com.wjl.o2o.entity.Shop" id="shopMap">
     		<id column="shop_id" property="shopId" />
     		<result column="shop_name" property="shopName" />
     		<result column="shop_desc" property="shopDesc" />
@@ -17,15 +17,15 @@
     		<result column="last_edit_time" property="lastEditTime" />
     		<result column="enable_status" property="enableStatus" />
     		<result column="advice" property="advice" />
-    		<association property="area" column="area_id" javaType="com.imooc.o2o.entity.Area">
+    		<association property="area" column="area_id" javaType="com.wjl.o2o.entity.Area">
     			<id column="area_id" property="areaId" />
     			<result column="area_name" property="areaName" />
     		</association>
-    		<association property="shopCategory" column="shop_category_id" javaType="com.imooc.o2o.entity.ShopCategory" >
+    		<association property="shopCategory" column="shop_category_id" javaType="com.wjl.o2o.entity.ShopCategory" >
     			<id column="shop_category_id" property="shopCategoryId"/>
     			<result column="shop_category_name" property="shopCategoryName" />
     		</association>
-    		<association property="owner" column="user_id" javaType="com.imooc.o2o.entity.PersonInfo" >
+    		<association property="owner" column="user_id" javaType="com.wjl.o2o.entity.PersonInfo" >
     			<id column="user_id" property="userID"/>
     			<result column="name" property="name" />
     		</association>

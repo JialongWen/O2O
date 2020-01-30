@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-    <mapper namespace="com.imooc.o2o.dao.WechatAuthDao">
+    <mapper namespace="com.wjl.o2o.dao.WechatAuthDao">
 	<resultMap id="wechatAuthResultMap" type="wechatAuth">
 		<id column="wechat_auth_id" property="wechatAuthId" />
 		<result column="open_id" property="openId" />
